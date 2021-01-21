@@ -1,0 +1,24 @@
+{
+    "$id": "http://example.com/example.json",
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "required": [
+        "title"
+    ],
+    "type": "object",
+    "properties": {
+        "salary": {
+            "minimum": 0,
+            "type": "integer"
+        },
+        "equity": {
+            "pattern": "0|(0?\\.[0-9]+)",
+            "type": "string"
+        },
+        "title": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}
